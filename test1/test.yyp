@@ -86,6 +86,7 @@
     {"id":{"name":"Oggetto_pausa","path":"objects/Oggetto_pausa/Oggetto_pausa.yy",},"order":3,},
     {"id":{"name":"oVitaBoss","path":"objects/oVitaBoss/oVitaBoss.yy",},"order":24,},
     {"id":{"name":"esciStanza","path":"sprites/esciStanza/esciStanza.yy",},"order":59,},
+    {"id":{"name":"spr_chiesa","path":"sprites/spr_chiesa/spr_chiesa.yy",},"order":84,},
     {"id":{"name":"Oggetto_Tutorial","path":"objects/Oggetto_Tutorial/Oggetto_Tutorial.yy",},"order":5,},
     {"id":{"name":"sNemicoVolanteAttacco","path":"sprites/sNemicoVolanteAttacco/sNemicoVolanteAttacco.yy",},"order":1,},
     {"id":{"name":"GameOver","path":"sounds/GameOver/GameOver.yy",},"order":5,},
