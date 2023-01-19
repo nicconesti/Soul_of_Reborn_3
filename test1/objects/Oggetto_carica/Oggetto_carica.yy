@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "Oggetto_carica",
   "spriteId": {
-    "name": "Carica",
-    "path": "sprites/Carica/Carica.yy",
+    "name": "Continua",
+    "path": "sprites/Continua/Continua.yy",
   },
   "solid": false,
   "visible": true,

@@ -17,9 +17,9 @@
   ],
   "layers": [
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances_1","instances":[
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_52D7DE98","properties":[],"isDnd":false,"objectId":{"name":"oEsci","path":"objects/oEsci/oEsci.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":2.12,"scaleY":1.6400001,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":0.0,"y":416.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_126EC5CC","properties":[],"isDnd":false,"objectId":{"name":"oContinua","path":"objects/oContinua/oContinua.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":2.28,"scaleY":1.6400001,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":896.0,"y":416.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_62B107F9","properties":[],"isDnd":false,"objectId":{"name":"OsuonoGameOver","path":"objects/OsuonoGameOver/OsuonoGameOver.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":-96.0,"y":256.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_149D8B40","properties":[],"isDnd":false,"objectId":{"name":"Oggetto_esci_pausa","path":"objects/Oggetto_esci_pausa/Oggetto_esci_pausa.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":2.75,"scaleY":4.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":187.5,"y":632.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_8329E46","properties":[],"isDnd":false,"objectId":{"name":"oContinua","path":"objects/oContinua/oContinua.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":2.75,"scaleY":4.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":992.0,"y":640.0,},
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritVisibility":true,"inheritSubLayers":true,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRAssetLayer","resourceVersion":"1.0","name":"Assets_1","assets":[
         {"resourceType":"GMRSpriteGraphic","resourceVersion":"1.0","name":"graphic_30C4EC1A","spriteId":{"name":"game_finito","path":"sprites/game_finito/game_finito.yy",},"headPosition":0.0,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"animationSpeed":1.0,"colour":4294967295,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":0.0,"y":0.0,},
@@ -31,9 +31,9 @@
   "creationCodeFile": "",
   "inheritCode": false,
   "instanceCreationOrder": [
-    {"name":"inst_52D7DE98","path":"rooms/game_over/game_over.yy",},
-    {"name":"inst_126EC5CC","path":"rooms/game_over/game_over.yy",},
     {"name":"inst_62B107F9","path":"rooms/game_over/game_over.yy",},
+    {"name":"inst_149D8B40","path":"rooms/game_over/game_over.yy",},
+    {"name":"inst_8329E46","path":"rooms/game_over/game_over.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

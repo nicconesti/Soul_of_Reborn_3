@@ -151,52 +151,247 @@ if (place_meeting(x,y+vsp,Obj_salva)){
 	}
 	vsp=0;
 }
-if(place_meeting(x , y , oTerreno) && place_meeting(x , y , oSpuntoneTutorial) && place_meeting(x , y , oSottoTerreno) &&  place_meeting(x , y , Osalto) && place_meeting(x , y , OsuperSalto) && place_meeting(x , y , Obj_salva)) {
+if(place_meeting(x , y , oTerreno)) {
 	for(var i = 0;i < 1000; i++) {
 		//right
-		if(!place_meeting(x+i , y ,oTerreno) && !place_meeting(x+i , y ,oSpuntoneTutorial) && !place_meeting(x+i , y ,oSottoTerreno) && !place_meeting(x+i , y ,Osalto) && !place_meeting(x+i , y ,OsuperSalto) && !place_meeting(x+i , y ,Obj_salva)) {
+		if(!place_meeting(x+i , y ,oTerreno)) {
 		x += i;
 		break;
 		}
 		//left
-		if(!place_meeting(x-i , y ,oTerreno) && !place_meeting(x-i , y ,oSpuntoneTutorial) && !place_meeting(x-i , y ,oSottoTerreno) && !place_meeting(x-i , y ,Osalto) && !place_meeting(x-i , y ,OsuperSalto) && !place_meeting(x-i , y ,Obj_salva)) {
+		if(!place_meeting(x-i , y ,oTerreno)) {
 		x -= i;
 		break;
 		}
 		//Up
-		if(!place_meeting(x , y-i ,oTerreno) && !place_meeting(x , y-i ,oSpuntoneTutorial) && !place_meeting(x , y-i ,oSottoTerreno) && !place_meeting(x, y-i ,Osalto) && !place_meeting(x, y-i ,OsuperSalto) && !place_meeting(x , y-i ,Obj_salva)) {
+		if(!place_meeting(x , y-i ,oTerreno)) {
 		y -= i;
 		break;
 		}
 		//down
-		if(!place_meeting(x , y+i ,oTerreno) && !place_meeting(x , y+i ,oSpuntoneTutorial) && !place_meeting(x , y+i ,oSottoTerreno) && !place_meeting(x, y+i ,Osalto) && !place_meeting(x, y+i ,OsuperSalto) && !place_meeting(x , y+i ,Obj_salva)) {
+		if(!place_meeting(x , y+i ,oTerreno)) {
 		y += i;
 		break;
 		}
 		//top right
-		if(!place_meeting(x+i , y-i ,oTerreno) && !place_meeting(x+i , y-i ,oSpuntoneTutorial) && !place_meeting(x+i , y-i ,oSottoTerreno) && !place_meeting(x+i, y-i ,Osalto) && !place_meeting(x+i, y-i ,OsuperSalto) && !place_meeting(x+i , y-i ,Obj_salva)) {
+		if(!place_meeting(x+i , y-i ,oTerreno)) {
 		x+=i;
 		y -= i;
 		break;
 		}
 		//top left
-		if(!place_meeting(x-i , y-i ,oTerreno) && !place_meeting(x-i , y-i ,oSpuntoneTutorial) && !place_meeting(x-i , y-i ,oSottoTerreno) && !place_meeting(x-i, y-i ,Osalto) && !place_meeting(x-i, y-i ,OsuperSalto) && !place_meeting(x-i , y-i ,Obj_salva)) {
+		if(!place_meeting(x-i , y-i ,oTerreno)) {
 		x-=i;
 		y -= i;
 		break;
 		}
 		//bottom right
-		if(!place_meeting(x+i , y+i ,oTerreno) && !place_meeting(x+i , y+i ,oSpuntoneTutorial) && !place_meeting(x+i , y+i ,oSottoTerreno) && !place_meeting(x+i, y+i ,Osalto) && !place_meeting(x+i, y+i ,OsuperSalto) && !place_meeting(x+i , y+i ,Obj_salva)) {
+		if(!place_meeting(x+i , y+i ,oTerreno)) {
 		x+=i;
 		y += i;
 		break;
 		//borrom left
-		if(!place_meeting(x-i , y+i ,oTerreno) && !place_meeting(x-i , y+i ,oSpuntoneTutorial) && !place_meeting(x-i , y+i ,oSottoTerreno) && !place_meeting(x-i, y+i ,Osalto) && !place_meeting(x-i, y+i ,OsuperSalto) && !place_meeting(x-i , y+i ,Obj_salva)) {
+		if(!place_meeting(x-i , y+i ,oTerreno)) {
 		x-=i;
 		y += i;
+		break;
+		}
+		
+	}
+}
+}
+if(place_meeting(x , y , oSottoTerreno)) {
+	for(var i = 0;i < 1000; i++) {
+		//right
+		if(!place_meeting(x+i , y ,oSottoTerreno)) {
+		x += i;
+		break;
+		}
+		//left
+		if(!place_meeting(x-i , y ,oSottoTerreno)) {
+		x -= i;
+		break;
+		}
+		//up
+		if(!place_meeting(x , y-i ,oSottoTerreno)) {
+		y -= i;
+		break;
+		}
+		//down
+		if(!place_meeting(x , y+i ,oSottoTerreno)) {
+		y += i;
+		break;
+		}
+		//top right
+		if(!place_meeting(x+i , y-i ,oSottoTerreno)) {
+		x+=i;
+		y -= i;
+		break;
+		}
+		//top left
+		if( !place_meeting(x-i , y-i ,oSottoTerreno)) {
+		x-=i;
+		y -= i;
+		break;
+		}
+		//bottom right
+		if(!place_meeting(x+i , y+i ,oSottoTerreno)) {
+		x+=i;
+		y += i;
+		break;
+		}
+		//bottom left
+		if(!place_meeting(x-i , y+i ,oSottoTerreno)) {
+		x-=i;
+		y += i;
+		break;
+		}
+		
+	}
+}
+if(place_meeting(x , y , Osalto)) {
+	for(var i = 0;i < 1000; i++) {
+		//right
+		if(!place_meeting(x+i , y ,Osalto)) {
+		x += i;
+		break;
+		}
+		//left
+		if(!place_meeting(x-i , y ,Osalto)) {
+		x -= i;
+		break;
+		}
+		//up
+		if(!place_meeting(x, y-i ,Osalto)) {
+		y -= i;
+		break;
+		}
+		//down
+		if(!place_meeting(x, y+i ,Osalto)) {
+		y += i;
+		break;
+		}
+		//top right
+		if(!place_meeting(x+i, y-i ,Osalto)) {
+		x+=i;
+		y -= i;
+		break;
+		}
+		//top left
+		if(!place_meeting(x-i, y-i ,Osalto)) {
+		x-=i;
+		y -= i;
+		break;
+		}
+		//bottom right
+		if(!place_meeting(x+i, y+i ,Osalto)) {
+		x+=i;
+		y += i;
+		break;
+		}
+		//bottom left
+		if(!place_meeting(x-i, y+i ,Osalto)) {
+		x-=i;
+		y += i;
+		break;
 		}
 	}
 }
+if(place_meeting(x , y , OsuperSalto)) {
+	for(var i = 0;i < 1000; i++) {
+		//right
+		if(!place_meeting(x+i , y ,OsuperSalto)) {
+		x += i;
+		break;
+		}
+		//left
+		if(!place_meeting(x-i , y ,OsuperSalto)) {
+		x -= i;
+		break;
+		}
+		//up
+		if(!place_meeting(x, y-i ,OsuperSalto)) {
+		y -= i;
+		break;
+		}
+		//down
+		if(!place_meeting(x, y+i ,OsuperSalto)) {
+		y += i;
+		break;
+		}
+		//top right
+		if(!place_meeting(x+i, y-i ,OsuperSalto)) {
+		x+=i;
+		y -= i;
+		break;
+		}
+		//top left
+		if( !place_meeting(x-i, y-i ,OsuperSalto)) {
+		x-=i;
+		y -= i;
+		break;
+		}
+		//bottom right
+		if( !place_meeting(x+i, y+i ,OsuperSalto)) {
+		x+=i;
+		y += i;
+		break;
+		}
+		//bottom left
+		if(!place_meeting(x-i, y+i ,OsuperSalto)) {
+		x-=i;
+		y += i;
+		break;
+		}
+	}
+}
+if(place_meeting(x , y , Obj_salva)) {
+	for(var i = 0;i < 1000; i++) {
+		//right
+		if(!place_meeting(x+i , y ,Obj_salva)) {
+		x += i;
+		break;
+		}
+		//left
+		if(!place_meeting(x-i , y ,Obj_salva)) {
+		x -= i;
+		break;
+		}
+		//up
+		if(!place_meeting(x , y-i ,Obj_salva)) {
+		y -= i;
+		break;
+		}
+		//down
+		if(!place_meeting(x , y+i ,Obj_salva)) {
+		y += i;
+		break;
+		}
+		//top right
+		if(!place_meeting(x+i , y-i ,Obj_salva)) {
+		x+=i;
+		y -= i;
+		break;
+		}
+		//top left
+		if( !place_meeting(x-i , y-i ,Obj_salva)) {
+		x-=i;
+		y -= i;
+		break;
+		}
+		//bottom right
+		if(!place_meeting(x+i , y+i ,Obj_salva)) {
+		x+=i;
+		y += i;
+		break;
+		}
+		//bottom left
+		if(!place_meeting(x-i , y+i ,Obj_salva)) {
+		x-=i;
+		y += i;
+		break;
+		}
+	}
 }
 y=y+vsp;
 x=x+hsp;
