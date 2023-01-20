@@ -218,5 +218,3 @@ else if abs(x - oProtagonista.x) < global.triggerRange {
 if isAttacking != true{
 	walkAround();
 }
-
-
