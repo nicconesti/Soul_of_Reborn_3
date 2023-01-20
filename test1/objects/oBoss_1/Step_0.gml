@@ -34,7 +34,7 @@ function run(){
 	}
 	sprite_index = boss_1_run;
 	adjustSpriteMirror()
-	x = x + lengthdir_x(4, point_direction(x + attackRange,y, oProtagonista.x + attackRange, oProtagonista.y));
+	x = x + lengthdir_x(2.5, point_direction(x + attackRange,y, oProtagonista.x + attackRange, oProtagonista.y));
 }
 
 // returna true se il boss sta ancora eseguendo l'animazione di attacco.
@@ -60,6 +60,13 @@ if abs(x - oProtagonista.x) < attackRange {
 else {
 	run();
 }
+
+function hitByPG(){
+	global.hp=global.hp-25;
+	if(global.hp<=0){
+		sprite_index=boss_1_death;
+		instance_destroy(oBoss_1);
+}}
 
 	
 	

@@ -10,8 +10,8 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 104,
-  "bbox_right": 199,
+  "bbox_left": 100,
+  "bbox_right": 195,
   "bbox_top": 54,
   "bbox_bottom": 165,
   "HTile": false,
@@ -78,7 +78,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprite",
-    "path": "folders/Sprite.yy",
+    "name": "nemico2",
+    "path": "folders/Sprite/nemico2.yy",
   },
 }
