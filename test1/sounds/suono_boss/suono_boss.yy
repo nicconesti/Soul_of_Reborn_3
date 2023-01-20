@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSound",
   "resourceVersion": "1.0",
-  "name": "Sound8",
+  "name": "suono_boss",
   "conversionMode": 0,
   "compression": 0,
   "volume": 1.0,
@@ -14,7 +14,7 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "Sound8.mp3",
+  "soundFile": "suono_boss.mp3",
   "duration": 223.968,
   "parent": {
     "name": "Suoni",
