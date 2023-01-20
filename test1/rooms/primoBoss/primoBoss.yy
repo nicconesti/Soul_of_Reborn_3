@@ -20,6 +20,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_4B33A262","properties":[],"isDnd":false,"objectId":{"name":"oBoss_1","path":"objects/oBoss_1/oBoss_1.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1120.0,"y":512.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_324C10D5","properties":[],"isDnd":false,"objectId":{"name":"Obj_vita_boss","path":"objects/Obj_vita_boss/Obj_vita_boss.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1056.0,"y":416.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2B445A77","properties":[],"isDnd":false,"objectId":{"name":"Obj_vita_punt","path":"objects/Obj_vita_punt/Obj_vita_punt.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":32.0,"y":64.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_76AC9690","properties":[],"isDnd":false,"objectId":{"name":"oSuonoBoss","path":"objects/oSuonoBoss/oSuonoBoss.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":224.0,"y":224.0,},
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritVisibility":true,"inheritSubLayers":true,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances_1","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_349ED8B2","properties":[],"isDnd":false,"objectId":{"name":"oTerreno","path":"objects/oTerreno/oTerreno.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.25,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":64.0,"y":672.0,},
@@ -65,6 +66,7 @@
     {"name":"inst_5745324","path":"rooms/primoBoss/primoBoss.yy",},
     {"name":"inst_D49EE52","path":"rooms/primoBoss/primoBoss.yy",},
     {"name":"inst_2B445A77","path":"rooms/primoBoss/primoBoss.yy",},
+    {"name":"inst_76AC9690","path":"rooms/primoBoss/primoBoss.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
