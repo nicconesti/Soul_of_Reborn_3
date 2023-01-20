@@ -2,10 +2,7 @@
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
   "name": "oNemico2",
-  "spriteId": {
-    "name": "sNemico2",
-    "path": "sprites/sNemico2/sNemico2.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "managed": true,
