@@ -211,3 +211,7 @@ else if abs(x - oProtagonista.x) < global.triggerRange {
 else {
 	walkAround();
 }
+
+function hitByPG(){
+	hp=hp-50;
+}
