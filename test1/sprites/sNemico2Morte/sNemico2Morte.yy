@@ -134,7 +134,7 @@
     "resourceType": "GMNineSliceData",
   },
   "parent": {
-    "name": "Sprite",
-    "path": "folders/Sprite.yy",
+    "name": "nemico2",
+    "path": "folders/Sprite/nemico2.yy",
   },
 }

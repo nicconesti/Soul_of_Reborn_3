@@ -207,3 +207,10 @@ else if abs(x - oProtagonista.x) < global.triggerRange {
 else {
 	walkAround();
 }
+
+function hitByPG(){
+	hp=hp-50;
+	if(hp<=0){
+		sprite_index=sNemico2Morte;
+		instance_destroy(oNemico2);
+}}

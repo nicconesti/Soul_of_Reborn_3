@@ -61,5 +61,12 @@ else {
 	run();
 }
 
+function hitByPG(){
+	global.hp=global.hp-25;
+	if(global.hp<=0){
+		sprite_index=boss_1_death;
+		instance_destroy(oBoss_1);
+}}
+
 	
 	

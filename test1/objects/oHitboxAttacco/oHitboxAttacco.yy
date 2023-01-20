@@ -2,10 +2,7 @@
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
   "name": "oHitboxAttacco",
-  "spriteId": {
-    "name": "sHitboxAttacco",
-    "path": "sprites/sHitboxAttacco/sHitboxAttacco.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "managed": true,
