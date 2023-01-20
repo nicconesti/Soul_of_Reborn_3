@@ -446,7 +446,7 @@ if(!keyboard_check_pressed(key_attack)&&hsp==0){
 				var hitID=hitByAttackNow[| i];
 				if(ds_list_find_index(hitByAttack,hitID)==-1){
 					ds_list_add(hitByAttack,hitID);
-					with(hitID){ soNemico3.hitByPG(); }	
+					with(hitID){ oNemico3.hitByPG(); }	
 				}
 			}
 		}

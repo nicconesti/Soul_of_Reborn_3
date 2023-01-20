@@ -1,7 +1,7 @@
 /// @description Inserisci qui la descrizione
 //Puoi scrivere il tuo codice in questo editor
 
-audio_play_sound(oSuonoBoss,10,true);
+audio_play_sound(suono_boss,10,true);
 
 
 
