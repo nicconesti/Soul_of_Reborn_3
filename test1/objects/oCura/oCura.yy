@@ -1,8 +1,11 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "oSabakuPoteri",
-  "spriteId": null,
+  "name": "oCura",
+  "spriteId": {
+    "name": "sCura",
+    "path": "sprites/sCura/sCura.yy",
+  },
   "solid": false,
   "visible": true,
   "managed": true,
@@ -22,7 +25,7 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":70,"eventType":5,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"oProtagonista","path":"objects/oProtagonista/oProtagonista.yy",},},
   ],
   "properties": [],
   "overriddenProperties": [],
