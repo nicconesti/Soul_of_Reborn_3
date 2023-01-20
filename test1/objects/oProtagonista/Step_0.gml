@@ -413,110 +413,116 @@ if(!place_meeting(x,y+1,oTerreno)&&(!place_meeting(x,y+1,Osalto)) && (!place_mee
 		sprite_index = sProtagonistaCorsa;
 	}
 }
-//attacco1
-if(!keyboard_check_pressed(key_attack)&&hsp==0){
-		sprite_index = sProtagonistaAttacco;
-		ds_list_clear(hitByAttack)
-		mask_index=sHitboxAttacco1;
-		var hitByAttackNow=ds_list_create();
-		var hits1=instance_place_list(x,y,oNemico1,hitByAttackNow,false);
-		var hits2=instance_place_list(x,y,oNemico2,hitByAttackNow,false);
-		var hits3=instance_place_list(x,y,oNemico3,hitByAttackNow,false);
-		var hitsBoss=instance_place_list(x,y,oBoss_1,hitByAttackNow,false);
-		if(hits1>0){
-			for(var i=0;i<hits1;i++){
-				var hitID=hitByAttackNow[| i];
-				if(ds_list_find_index(hitByAttack,hitID)==-1){
-					ds_list_add(hitByAttack,hitID);
-					with(hitID){ oNemico1.hitByPG(); }	
-				}
-			}
-		}
-		if(hits2>0){
-			for(var i=0;i<hits2;i++){
-				var hitID=hitByAttackNow[| i];
-				if(ds_list_find_index(hitByAttack,hitID)==-1){
-					ds_list_add(hitByAttack,hitID);
-					with(hitID){ oNemico2.hitByPG(); }				
-				}
-			}
-		}
-		if(hits3>0){
-			for(var i=0;i<hits3;i++){
-				var hitID=hitByAttackNow[| i];
-				if(ds_list_find_index(hitByAttack,hitID)==-1){
-					ds_list_add(hitByAttack,hitID);
-					with(hitID){ oNemico3.hitByPG(); }	
-				}
-			}
-		}
-		if(hitsBoss>0){
-			for(var i=0;i<hitsBoss;i++){
-				var hitID=hitByAttackNow[| i];
-				if(ds_list_find_index(hitByAttack,hitID)==-1){
-					ds_list_add(hitByAttack,hitID);
-					with(hitID){ oBoss_1.hitByPG(); }	
-				}
-			}
-		}
-		ds_list_destroy(hitByAttackNow);
-		mask_index=sprite_index;
-}
-if (hsp!= 0) image_xscale = sign(hsp);
 
+if(hsp!=0) image_xscale=sign(hsp);
+//if(!keyboard_check(ord("W"))&&!keyboard_check(ord("Q"))) keyPressed=false;
+
+
+//attacco1
+function attack1(){
+	sprite_index = sProtagonistaAttacco;
+	ds_list_clear(hitByAttack)
+	mask_index=sHitboxAttacco1;
+	var hitByAttackNow=ds_list_create();
+	var hits1=instance_place_list(x,y,oNemico1,hitByAttackNow,false);
+	var hits2=instance_place_list(x,y,oNemico2,hitByAttackNow,false);
+	var hits3=instance_place_list(x,y,oNemico3,hitByAttackNow,false);
+	var hitsBoss=instance_place_list(x,y,oBoss_1,hitByAttackNow,false);
+	if(hits1>0){
+		for(var i=0;i<hits1;i++){
+			var hitID=hitByAttackNow[| i];
+			if(ds_list_find_index(hitByAttack,hitID)==-1){
+				ds_list_add(hitByAttack,hitID);
+				with(hitID){ oNemico1.hitByPG(); }	
+			}
+		}
+	}
+	if(hits2>0){
+		for(var i=0;i<hits2;i++){
+			var hitID=hitByAttackNow[| i];
+			if(ds_list_find_index(hitByAttack,hitID)==-1){
+				ds_list_add(hitByAttack,hitID);
+				with(hitID){ oNemico2.hitByPG(); }				
+			}
+		}
+	}
+	if(hits3>0){
+		for(var i=0;i<hits3;i++){
+			var hitID=hitByAttackNow[| i];
+			if(ds_list_find_index(hitByAttack,hitID)==-1){
+				ds_list_add(hitByAttack,hitID);
+				with(hitID){ oNemico3.hitByPG(); }	
+			}
+		}
+	}
+	if(hitsBoss>0){
+		for(var i=0;i<hitsBoss;i++){
+			var hitID=hitByAttackNow[| i];
+			if(ds_list_find_index(hitByAttack,hitID)==-1){
+				ds_list_add(hitByAttack,hitID);
+				with(hitID){ oBoss_1.hitByPG(); }	
+			}
+		}
+	}
+	ds_list_destroy(hitByAttackNow);
+	mask_index=sprite_index;
+}
+if(keyboard_check(ord("W"))&&hsp==0&&vsp==0){
+	attack1();
+}
 
 //attacco2
-if(!keyboard_check_pressed(key_attack2)&&hsp==0){
-		sprite_index = sProtagonistaAttacco2;
-		ds_list_clear(hitByAttack)
-		mask_index=sHitboxAttacco2;
-		var hitByAttackNow=ds_list_create();
-		var hits1=instance_place_list(x,y,oNemico1,hitByAttackNow,false);
-		var hits2=instance_place_list(x,y,oNemico2,hitByAttackNow,false);
-		var hits3=instance_place_list(x,y,oNemico3,hitByAttackNow,false);
-		var hitsBoss=instance_place_list(x,y,oBoss_1,hitByAttackNow,false);
-		if(hits1>0){
-			for(var i=0;i<hits1;i++){
-				var hitID=hitByAttackNow[| i];
-				if(ds_list_find_index(hitByAttack,hitID)==-1){
-					ds_list_add(hitByAttack,hitID);
-					with(hitID){ oNemico1.hitByPG(); }	
-				}
+function attack2(){
+	sprite_index = sProtagonistaAttacco2;
+	ds_list_clear(hitByAttack)
+	mask_index=sHitboxAttacco2;
+	var hitByAttackNow=ds_list_create();
+	var hits1=instance_place_list(x,y,oNemico1,hitByAttackNow,false);
+	var hits2=instance_place_list(x,y,oNemico2,hitByAttackNow,false);
+	var hits3=instance_place_list(x,y,oNemico3,hitByAttackNow,false);
+	var hitsBoss=instance_place_list(x,y,oBoss_1,hitByAttackNow,false);
+	if(hits1>0){
+		for(var i=0;i<hits1;i++){
+			var hitID=hitByAttackNow[| i];
+			if(ds_list_find_index(hitByAttack,hitID)==-1){
+				ds_list_add(hitByAttack,hitID);
+				with(hitID){ oNemico1.hitByPG(); }	
 			}
 		}
-		if(hits2>0){
-			for(var i=0;i<hits2;i++){
-				var hitID=hitByAttackNow[| i];
-				if(ds_list_find_index(hitByAttack,hitID)==-1){
-					ds_list_add(hitByAttack,hitID);
-					with(hitID){ oNemico2.hitByPG(); }				
-				}
+	}
+	if(hits2>0){
+		for(var i=0;i<hits2;i++){
+			var hitID=hitByAttackNow[| i];
+			if(ds_list_find_index(hitByAttack,hitID)==-1){
+				ds_list_add(hitByAttack,hitID);
+				with(hitID){ oNemico2.hitByPG(); }				
 			}
 		}
-		if(hits3>0){
-			for(var i=0;i<hits3;i++){
-				var hitID=hitByAttackNow[| i];
-				if(ds_list_find_index(hitByAttack,hitID)==-1){
-					ds_list_add(hitByAttack,hitID);
-					with(hitID){ oNemico3.hitByPG(); }	
-				}
+	}
+	if(hits3>0){
+		for(var i=0;i<hits3;i++){
+			var hitID=hitByAttackNow[| i];
+			if(ds_list_find_index(hitByAttack,hitID)==-1){
+				ds_list_add(hitByAttack,hitID);
+				with(hitID){ oNemico3.hitByPG(); }	
 			}
 		}
-		if(hitsBoss>0){
-			for(var i=0;i<hitsBoss;i++){
-				var hitID=hitByAttackNow[| i];
-				if(ds_list_find_index(hitByAttack,hitID)==-1){
-					ds_list_add(hitByAttack,hitID);
-					with(hitID){ oBoss_1.hitByPG(); }	
-				}
+	}
+	if(hitsBoss>0){
+		for(var i=0;i<hitsBoss;i++){
+			var hitID=hitByAttackNow[| i];
+			if(ds_list_find_index(hitByAttack,hitID)==-1){
+				ds_list_add(hitByAttack,hitID);
+				with(hitID){ oBoss_1.hitByPG(); }	
 			}
 		}
-		ds_list_destroy(hitByAttackNow);
-		mask_index=sprite_index;
+	}
+	ds_list_destroy(hitByAttackNow);
+	mask_index=sprite_index;
 }
-if (hsp!= 0) image_xscale = sign(hsp);
-
-
+if(keyboard_check(ord("Q"))&&hsp==0&&vsp==0){
+	attack2();
+}
 
 if place_meeting(x,y, oMoneta){
 	audio_play_sound(moneta, 10, false);
