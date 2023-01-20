@@ -416,7 +416,7 @@ if(!place_meeting(x,y+1,oTerreno)&&(!place_meeting(x,y+1,Osalto)) && (!place_mee
 //attacco1
 if(!keyboard_check_pressed(key_attack)&&hsp==0){
 		sprite_index = sProtagonistaAttacco;
-		alarm_set(0,1);
+		alarm_set(0,2);
 		
 		
 		
@@ -431,13 +431,7 @@ if(!keyboard_check_pressed(key_attack2)&&hsp==0){
 if (hsp!= 0) image_xscale = sign(hsp);
 
 
-//suono
 
-if (place_meeting(x,y, Obj_DeathPit) || (place_meeting(x,y, Ospuntone)))  {
-	audio_play_sound(danno_per_il_meme, 8, false);
-
-}
-	
 if place_meeting(x,y, oMoneta){
 	audio_play_sound(moneta, 10, false);
 }

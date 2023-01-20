@@ -1,4 +1,10 @@
 /// @description Inserisci qui la descrizione
 //Puoi scrivere il tuo codice in questo editor
 
-instance_create_depth(x,y,depth - 1,oHitboxAttacco)
+x += 8;
+hp = hp - 20;
+if(hp <= 0){
+	instance_deactivate_object(oNemico1);
+}
+
+

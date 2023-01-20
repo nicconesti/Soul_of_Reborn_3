@@ -2,19 +2,16 @@
 //Puoi scrivere il tuo codice in questo editor
 
 
-repeat(5){
-	instance_create_layer(other.x,other.y-18,"Assortita",ohitEffect);
+
+global.vite += -1;
+
+if(global.vite <= 0)
+{
+	room_goto(game_over);
+	instance_destroy(oProtagonista);
+	instance_destroy(oSabaku);
+	instance_destroy(Obj_vita_punt);
+	audio_stop_sound(MusicaLivello1);
+	instance_destroy(oParticellePolvere);
 }
-
-
-
-
-
-
-
-
-
-
-
-
 

@@ -1,8 +1,5 @@
 /// @description Inserisci qui la descrizione
 //Puoi scrivere il tuo codice in questo editor
-
-
-
 global.vite += -1;
 
 if(global.vite <= 0)
@@ -14,4 +11,7 @@ if(global.vite <= 0)
 	audio_stop_sound(MusicaLivello1);
 	instance_destroy(oParticellePolvere);
 }
+
+
+
 
