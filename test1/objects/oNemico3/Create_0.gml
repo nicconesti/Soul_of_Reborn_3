@@ -18,6 +18,13 @@ image_xscale = -1;
 
 sprite_index = sNemico3Idle;
 
+dir = -1;
+spd = 1;
+grv = 0.2;
+vspd = 0;
+hspd = 0 ;
+dont_fall = true;
+
 
 
 
