@@ -1,4 +1,4 @@
-hp = 100;
+hp = 500;
 
 attackRange = 80;
 
