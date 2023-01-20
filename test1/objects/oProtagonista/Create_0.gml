@@ -13,8 +13,6 @@ nextL=20;
 dashSpd=15;
 dashDuration=0;
 
-hitByAttack=ds_list_create();
-
 global.vite = 100;
 
 global.monete = 0;

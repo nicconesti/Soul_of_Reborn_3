@@ -2,7 +2,10 @@
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
   "name": "Oggetto_menu",
-  "spriteId": null,
+  "spriteId": {
+    "name": "Menu",
+    "path": "sprites/Menu/Menu.yy",
+  },
   "solid": false,
   "visible": true,
   "managed": true,

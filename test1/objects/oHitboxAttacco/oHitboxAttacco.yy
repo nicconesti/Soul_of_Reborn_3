@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "oHitboxAttacco",
   "spriteId": {
-    "name": "sHitboxAttacco1",
-    "path": "sprites/sHitboxAttacco1/sHitboxAttacco1.yy",
+    "name": "sHitboxAttacco",
+    "path": "sprites/sHitboxAttacco/sHitboxAttacco.yy",
   },
   "solid": false,
   "visible": false,

@@ -85,7 +85,6 @@
     {"id":{"name":"Oggetto_pausa","path":"objects/Oggetto_pausa/Oggetto_pausa.yy",},"order":3,},
     {"id":{"name":"oVitaBoss","path":"objects/oVitaBoss/oVitaBoss.yy",},"order":24,},
     {"id":{"name":"esciStanza","path":"sprites/esciStanza/esciStanza.yy",},"order":59,},
-    {"id":{"name":"sHitboxAttacco2","path":"sprites/sHitboxAttacco2/sHitboxAttacco2.yy",},"order":85,},
     {"id":{"name":"spr_chiesa","path":"sprites/spr_chiesa/spr_chiesa.yy",},"order":84,},
     {"id":{"name":"Oggetto_Tutorial","path":"objects/Oggetto_Tutorial/Oggetto_Tutorial.yy",},"order":5,},
     {"id":{"name":"sNemicoVolanteAttacco","path":"sprites/sNemicoVolanteAttacco/sNemicoVolanteAttacco.yy",},"order":1,},
@@ -143,7 +142,7 @@
     {"id":{"name":"oProtagonistaTut","path":"objects/oProtagonistaTut/oProtagonistaTut.yy",},"order":30,},
     {"id":{"name":"Sprite58","path":"sprites/Sprite58/Sprite58.yy",},"order":16,},
     {"id":{"name":"sMenuSabaku","path":"sprites/sMenuSabaku/sMenuSabaku.yy",},"order":68,},
-    {"id":{"name":"sHitboxAttacco1","path":"sprites/sHitboxAttacco1/sHitboxAttacco1.yy",},"order":41,},
+    {"id":{"name":"sHitboxAttacco","path":"sprites/sHitboxAttacco/sHitboxAttacco.yy",},"order":41,},
     {"id":{"name":"oParticellePolvere","path":"objects/oParticellePolvere/oParticellePolvere.yy",},"order":39,},
     {"id":{"name":"boss_1_idle","path":"sprites/boss_1_idle/boss_1_idle.yy",},"order":1,},
     {"id":{"name":"TutorialVite","path":"sprites/TutorialVite/TutorialVite.yy",},"order":53,},
@@ -190,10 +189,6 @@
     {"id":{"name":"Otp1","path":"objects/Otp1/Otp1.yy",},"order":7,},
   ],
   "Options": [
-<<<<<<< Updated upstream
-=======
-    {"name":"macOS","path":"options/mac/options_mac.yy",},
->>>>>>> Stashed changes
     {"name":"operagx","path":"options/operagx/options_operagx.yy",},
     {"name":"Main","path":"options/main/options_main.yy",},
     {"name":"Windows","path":"options/windows/options_windows.yy",},
