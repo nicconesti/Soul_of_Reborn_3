@@ -67,6 +67,55 @@ function hitByPG(){
 		sprite_index=boss_1_death;
 		instance_destroy(oBoss_1);
 }}
+if(place_meeting(x , y , oTerreno_inv)) {
+		for(var i = 0;i < 1000; i++) {
+			//right
+			if(!place_meeting(x+i , y ,oTerreno_inv)) {
+			x += i;
+			break;
+			}
+			//left
+			if(!place_meeting(x-i , y ,oTerreno_inv)) {
+			x -= i;
+			break;
+			}
+			//Up
+			if(!place_meeting(x , y-i ,oTerreno_inv)) {
+			y -= i;
+			break;
+			}
+			//down
+			if(!place_meeting(x , y+i ,oTerreno_inv)) {
+			y += i;
+			break;
+			}
+			//top right
+			if(!place_meeting(x+i , y-i ,oTerreno_inv)) {
+			x+=i;
+			y -= i;
+			break;
+			}
+			//top left
+			if(!place_meeting(x-i , y-i ,oTerreno_inv)) {
+			x-=i;
+			y -= i;
+			break;
+			}
+			//bottom right
+			if(!place_meeting(x+i , y+i ,oTerreno_inv)) {
+			x+=i;
+			y += i;
+			break;
+			//borrom left
+			if(!place_meeting(x-i , y+i ,oTerreno_inv)) {
+			x-=i;
+			y += i;
+			break;
+			}
+		
+		}
+	}
+	}
 
 	
 	

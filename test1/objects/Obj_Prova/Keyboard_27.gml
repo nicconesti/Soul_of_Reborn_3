@@ -2,6 +2,8 @@
 //Puoi scrivere il tuo codice in questo editor
 room_goto(Room7);
 audio_stop_sound(MusicaLivello1);
+instance_destroy(oProtagonista);
+instance_destroy(oSabaku);
 
 
 

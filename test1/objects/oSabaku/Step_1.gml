@@ -12,8 +12,8 @@ y=oProtagonista.y-40;
 
 #region ai
 
-	if(instance_exists(oNemico1)){
-		var nearestEnemy=instance_nearest(x,y, oNemico1);
+	if(instance_exists(oNemico3)){
+		var nearestEnemy=instance_nearest(x,y, oNemico3);
 		if(attackRange> point_distance(x,y, nearestEnemy.x,nearestEnemy.y)){
 			attack_timer--;
 			if(attack_timer<=0and ammo>0){ammo--;
@@ -37,6 +37,20 @@ y=oProtagonista.y-40;
 				bullet.direction=point_direction(x,y,mouse_x,mouse_y );
 				bullet.image_angle=point_direction(x,y,mouse_x,mouse_y );
 				bullet.speed=1;
+			}
+		}
+		
+	}
+	if(instance_exists(oBoss_1)){
+		var nearestEnemy=instance_nearest(x,y, oBoss_1);
+		if(attackRange> point_distance(x,y, nearestEnemy.x,nearestEnemy.y)){
+			attack_timer--;
+			if(attack_timer<=0and ammo>0){ammo--;
+				attack_timer=attackTime;
+				var bullet = instance_create_layer(x,y,"Assortita",	oProiettileSabaku);
+				bullet.direction=point_direction(x,y,mouse_x,mouse_y );
+				bullet.speed=1;
+				bullet.direction=point_direction(x,y,mouse_x,mouse_y );
 			}
 		}
 		

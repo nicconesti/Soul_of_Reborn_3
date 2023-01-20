@@ -1,5 +1,6 @@
 /// @description Inserisci qui la descrizione
 
+global.hp += -10;
 instance_destroy();
 
 instance_create_layer(x,y,"Assortita",oEsplosione );
