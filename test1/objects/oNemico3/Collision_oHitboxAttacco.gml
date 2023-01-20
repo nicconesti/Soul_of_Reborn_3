@@ -5,5 +5,6 @@ hp = hp - 20;
 if(hp <= 0){
 	instance_deactivate_object(oNemico3);
 }
+//bshkjcbjdbciod
 
 
