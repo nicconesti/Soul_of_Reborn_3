@@ -1,3 +1,9 @@
+/// @description Insert description here
+// You can write your code in this editor
+
+
+
+
 if x > oProtagonista.x {
 	global.lookingRight = false;
 }
@@ -26,7 +32,7 @@ function run(){
 	if(isAttacking == true){
 		return;
 	}
-	sprite_index = sNemico1;
+	sprite_index = sNemico3Walk;
 	adjustSpriteMirror()
 	x = x + lengthdir_x(1, point_direction(x + attackRange,y, oProtagonista.x + attackRange, oProtagonista.y));
 }
@@ -52,15 +58,8 @@ function walkAround(){
 //combattimento
 if abs(x - oProtagonista.x) < attackRange {
 	if(isAttacking == true){ return }
-	var randomNumber = irandom(1);
-	if(randomNumber == 0){
-		global.bossLastAttackAnimationIndex = 6
-		attack(sNemico1Attacco1);
-	}
-	else{
-		global.bossLastAttackAnimationIndex = 6
-		attack(sNemico1Attacco2)
-	}
+	global.bossLastAttackAnimationIndex = 10
+	attack(sNemico3Attacco1);
 }
 else if abs(x - oProtagonista.x) < global.triggerRange {
 	run();

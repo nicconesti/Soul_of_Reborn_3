@@ -1,14 +1,14 @@
-/// @description Inserisci qui la descrizione
-//Puoi scrivere il tuo codice in questo editor
-
-
 hp = 100;
 
-attackRange = 20;
+attackRange = 80;
 
 isAttacking = false;
 
-lookingRight1 = true;
+global.lookingRight = true;
+global.triggerRange = attackRange*3
+global.lastAttackAnimationIndex = 0;
+
+image_xscale = -1;
 
 sprite_index = sNemico2Walk;
 
